@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>patinhas carentes</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        .barra {
+            background-color: rgba(153, 11, 172, 0.979);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 80px;
+        }
+
+        .logopatinhas{
+            width: 90px;
+            margin-left: 50px;
+        }
+
+        .logo2{
+            margin-left: 350px;
+        }
+
+        .listacombotao{
+            margin-left: 300px;
+            margin-top: -50px;
+        }
+        
+
+        .botão1{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 16px;
+            color: rgba(153, 11, 172, 0.979);
+            font-weight: bold;
+            border-radius: 10px;
+            
+        }
+
+        .botão2{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 16px;
+            color: rgba(153, 11, 172, 0.979);
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+        .botão3{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 16px;
+            color: rgba(153, 11, 172, 0.979);
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+        .botão4{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 16px;
+            color: rgba(153, 11, 172, 0.979);
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgba(153, 11, 172, 0.979);
+            font-style: normal;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif; 
+        }
+
+        h2{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 30px;
+            color: rgba(153, 11, 172, 0.979);
+        }
+
+        h3{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 30px;
+            color: rgba(153, 11, 172, 0.979);
+        }
+
+        h4{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 30px;
+            color: rgba(153, 11, 172, 0.979);
+        }
+        
+        h5{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 30px;
+            color: rgba(153, 11, 172, 0.979);
+        }
+        
+        .parag1 {
+            font-size: 16px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color:rgb(100, 97, 92)
+        }
+        
+        .parag2{
+            font-size: 16px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color:rgb(100, 97, 92)
+        }
+        
+
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, rgb(152, 204, 235), rgb(240, 246, 248)); /* cor de fundo */
+            /* to right= para direita */
+        }
+        
+        .imagem {
+            align-items: center;
+            width: 600px;
+            height: 360x;
+            margin-left: 30%;
+            border-radius: 15px;
+        
+        }
+        
+        
+        .box {
+            position: absolute; /* ocupar apenas o elemento da box */
+            top: 95%;
+            left: 40%;
+            transform: translate(-50%, -50%); /* (x,y) */
+            background-color: rgba(153, 11, 172, 0.979); /* cor de fundo da caixa */
+            margin-left: -240px;
+            margin-top: -250px;
+            padding: 15px; 
+            border-radius: 15px;
+            width: 20%;
+            height: 50%;
+            color:rgb(248, 239, 239);
+            
+            
+        }
+        
+        
+        form {
+            align-items: baseline;
+            /* Apenas para centralizar o form na página */
+            margin:auto;
+            width: 400px;
+            /* Para ver as bordas do formulário */
+            
+            
+            
+        }
+
+        .caodisponivel{
+            margin-left: 10%;
+        }
+
+        .linha1{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 16px;
+            color: rgba(153, 11, 172, 0.979);
+            font-weight: bold
+        }
+
+        .linha2 {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 16px;
+            color: rgba(153, 11, 172, 0.979);
+            font-weight: bold
+        }
+
+
+        .img1{
+            border-radius: 15px;
+     
+        }
+        
+        .img2{
+            border-radius: 15px;
+
+        }
+        
+        .img3{
+            border-radius: 15px;
+
+        }
+        
+        .img4{
+            border-radius: 15px;
+     
+        }
+        
+        .img5{
+            border-radius: 15px;
+
+        }
+        
+        .img6{
+            border-radius: 15px;
+
+        }
+
+        .caixinha1{
+            background-color: white; 
+            border:2px solid rgb(243, 240, 42); 
+            padding: 5px;
+            text-align:justify;
+            border-radius: 15px;
+            
+            
+            
+        }
+
+        .caixinha2{
+            background-color: white; 
+            border:2px solid rgb(243, 240, 42); 
+            padding: 5px;
+            text-align:justify;
+            border-radius: 15px;
+            
+        }
+
+        .caixinha3{
+            background-color: white; 
+            border:2px solid rgb(243, 240, 42); 
+            padding: 5px;
+            text-align:justify;
+            border-radius: 15px;
+            
+            
+        }
+
+        .p1{
+            font-size: 16px;
+            color: rgba(153, 11, 172, 0.979);
+            font-weight: bold;
+
+        }
+
+        .p11{
+            font-size: 16px;
+            color: rgb(100, 97, 92);
+            text-align:justify;
+           
+            
+            
+        }
+
+        .p2{
+            font-size: 16px;
+            color: rgba(153, 11, 172, 0.979);
+            font-weight: bold;
+
+        }
+
+        .p22{
+            font-size: 16px;
+            color: rgb(100, 97, 92);
+            text-align:justify;
+           
+            
+            
+        }
+
+        .p3{
+            font-size: 16px;
+            color: rgba(153, 11, 172, 0.979);
+            font-weight: bold;
+
+        }
+
+        .p33{
+            font-size: 16px;
+            color: rgb(100, 97, 92);
+            text-align:justify;
+           
+            
+            
+        }
+
+        footer{
+            background-color: rgba(153, 11, 172, 0.979);
+            position: absolute;
+            top: 200;
+            left: 0;
+            right: 0;
+            height: 80px;
+            text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 16px;
+            margin-bottom: 80;
+	        
+        }
+
+        
+        
+
+
+        
+
+
+    </style>  
+    
+</head>
+
+<body>
+
+    <div class="barra">
+        <img class="logopatinhas" src="https://static.wixstatic.com/media/e2e4ef_e9b1062dae3a4891b6cc595b17fb845a~mv2.png" >
+        <li class="listacombotao">
+            
+            <button class="botão1" type="submit">Quero adotar</button>
+            <button class="botão2" type="submit">Quero divulgar um animal</button>
+            <button class="botão3" type="submit">Entrar</button>
+            <button class="botão4" type="submit">Cadastre-se</button>
+
+        </li>
+    </div>
+    <br><br><br><br><br><br><br>
+    <h1></h1>
+
+    <div>
+    <img class="imagem" src="https://www.mundoecologia.com.br/wp-content/uploads/2019/11/Ra%C3%A7as-e-Idade-dos-C%C3%A3es-1.jpg"> 
+    </div>
+
+    <div class="box" >
+        
+        <p>Encontre seu melhor amigo:</p>      
+    
+    
+        <form>
+            
+                <div class="campo">
+                    <label>Sexo:</label>
+                    <br>
+                    <input type="radio" name="genero" value="femea">
+                    <label for="femea">Fêmea</label>
+                    <br>
+                    <input type="radio" name="genero" value="macho">
+                    <label for="macho">Macho</label>
+                    <br>
+                </div>
+                <br>
+
+                <div>
+                    <label>Idade:</label>
+                    <br>
+                    <input type="radio" name="idade" value="filhotes">
+                    <label for="filhotes">0 a 1 ano(Filhotes)</label>
+                    <br>
+                    <input type="radio" name="idade" value="jovens">
+                    <label for="jovens">2 a 5 anos(Jovens)</label>
+                    <br>
+                    <input type="radio" name="idade" value="adultos">
+                    <label for="adultos">6 a 10 anos(Adultos)</label>
+                    <br>
+                </div>
+                <br>
+
+                <div>
+                    <label>Porte:</label>
+                    <br>
+                    <input type="radio" name="tamanho" value="porte">
+                    <label for="forte">0 a 10 kg(Pequeno)</label>
+                    <br>
+                    <input type="radio" name="tamanho" value="porte">
+                    <label for="porte">10 a 25 kg(Grande)</label>
+                    <br>
+                </div>
+                <br>
+
+        
+            <button class="botão" type="submit">Procurar</button>
+        
+        </form>    
+    </div>
+
+    <br><br><br>
+    <section>
+        <h2>Quem somos?</h2>
+        <p class="parag1">Nós fazemos a conexão entre quem deseja adotar um doguinho com uma rede de mais de 98 ONGs e protetores parceiros. Funciona assim: a Patinhas disponibiliza espaços especialmente dedicados para a adoção no centro de suas lojas e as ONGs/protetores parceiros ficam responsáveis pelo processo e entrevista com os potenciais adotantes. Juntos somos mais fortes!</p>
+    </section>
+
+    <section>
+        <h3>Novos peludos por aqui</h3>
+        <p class="parag2">Nosso site está cheio de doguinhos ansiosos por uma família.
+            Vem ver!
+        </p>
+        <div class="caodisponivel">
+            <table class="tabela" >
+                <tr class="linha1" >
+                    <td> <img class="img1" src="https://st.depositphotos.com/1594920/2652/i/600/depositphotos_26520613-stock-photo-pug-sitting-and-panting-1.jpg" width="260px" height="240px">Fred, 3 anos</td>
+                    <td> <img class="img2" src="https://i0.wp.com/www.portaldodog.com.br/cachorros/wp-content/uploads/2019/12/cao-pinscher-miniatura_87557-11169-1.jpg?resize=626%2C841&ssl=1" width="260px" height="240px">Scooby, 5 anos</td>
+                    <td> <img class="img3" src="https://www.petz.com.br/cachorro/racas/labrador/img/labrador-guia-racas.webp" width="260px" height="240px">Pepeto, 7 anos</td>
+                </tr>
+                <tr class="linha2">
+                    <td> <img class="img4"  src="https://static.ricmais.com.br/uploads/2020/05/cachorra-sacrificada-enterrado-dona-1.jpg" width="260px" height="240px">Jade, 1 ano</td>
+                    <td> <img class="img5" src="https://static.wixstatic.com/media/290c20_90530a6fdd2249c0a28a2e698aefd9b8~mv2.jpg/v1/fill/w_494,h_500,al_c,q_90/290c20_90530a6fdd2249c0a28a2e698aefd9b8~mv2.jpg" width="260px" height="240px">Lola,4 anos</td>
+                    <td> <img class="img6" src="https://thumbs.dreamstime.com/b/spaniel-de-cocker-sentando-se-1-ano-velho-10047657.jpg" width="260px" height="240px">Amora, 6 anos</td>
+                </tr>
+            </table>
+
+        </div>
+    </section>
+
+    <section>
+        <h4>Por que adotar?</h4>
+
+        <div class="caixinha1"> 
+            <img src="https://www.amigonaosecompra.com.br/images/home/why_adopt1-a513c1a3285b4027a0bda2fb2f3696d7.png?vsn=d" width="88rem" align="left"> 
+            <p class="p1">Neste exato momento,</p>
+            <p class="p11">existem milhares de doguinhos e gatinhos esperando um humano para chamar de seu.</p>
+        </div>
+        
+        <br><br><br>
+
+    
+        <div class="caixinha2">
+            <img src="https://www.amigonaosecompra.com.br/images/home/why_adopt2-9de523c1e0339189eadec39029d53d4c.png?vsn=d"  width="88rem" align="left" >
+            <p class="p2">E não há recompensa maior,</p>
+            <p class="p22">do que vê-los se tornando aquela coisinha alegre e saudável depois de uma boa dose de cuidado e carinho.</p>
+        </div>
+        <br><br><br><br>
+
+
+        <div class="caixinha3">
+            <img src="https://www.amigonaosecompra.com.br/images/home/why_adopt3-55e936d9243cbce89b557f51daf99a2a.png?vsn=d"  width="88rem" align="left" >
+            <p class="p3">Pensando bem, a pergunta é outra:</p>
+            <p class="p33">se você pode mudar o destino de um animal de rua, por que não faria isso?</p>
+        </div>
+        <br><br><br>
+
+    </section>
+
+    <section>
+        <h5>Quer fazer parte dessa corrente do bem e adotar? Entenda como funciona:</h5>
+        <table cellspacing="20">
+            <tr>
+                <td >
+                    <img src="https://www.adotepetz.com.br/images/Grupo_2251.svg" width="88rem" align="left"> 
+                    <p class="p1">Formulário de Interesse</p>
+                    <p class="p11">Faça a entrevista pelo nosso whatsapp ou basta preencher o formulário de interesse que disponibilizamos aqui entraramos em contato com você em até 48h.</p>
+                </td>
+                
+
+                <td >
+                    <img src="https://www.adotepetz.com.br/images/Grupo_2252.svg" width="88rem" align="left"> 
+                    <p class="p1">Avaliação da Adoção</p>
+                    <p class="p11">A Patinha Carentes irá fazer a análise do cadastro e perfil do adotante vs dog escolhido. Preenchendo os requisitos, você recebe a aprovação na hora (quando a entrevista é realizada pelo atendente da Patinhas Carentes) ou por telefone / e-mail caso seja preenchido o formulário online</p>
+                </td>
+                
+                <td >
+                    <img src="https://www.adotepetz.com.br/images/Grupo_2262.svg" width="88rem" align="left"> 
+                    <p class="p1">Adoção Completa</p>
+                    <p class="p11">Caso seja aprovado na hora pela Patinha Carentes, você já pode levar seu pet para casa! Se enviou o formulário online, espere o contato e a aprovação. Com tudo certo, você busca seu dog no dia combinado com a Patinhas Carentes.</p>
+                </td>
+
+            </tr>
+        </table>
+        <br><br><br>
+
+    
+
+        
+
+        <footer>
+            <a class="linkgmail" href="mailto:antoniaalves242526@gmail.com">Gmail</a>
+            <img class="logogmail"  src="https://imagepng.org/wp-content/uploads/2018/03/gmail-cone-icon.png" width="40px">
+            <a class="linkzap" href="https://api.whatsapp.com/send?phone=5575992405671&text=Olá,%20Patinhas%20Carentes!">WhatAapp</a>
+            <img class="logozap"  src="https://logodownload.org/wp-content/uploads/2015/04/whatsapp-logo-1-1.png" width="40px">
+        </footer>
+            
+</body>
+    
+</html>
+
+
+
+    
